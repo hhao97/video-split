@@ -4,6 +4,7 @@ import appIcon from '@/resources/build/icon.png?asset'
 import { registerResourcesProtocol } from './protocols'
 import { registerWindowHandlers } from '@/lib/conveyor/handlers/window-handler'
 import { registerAppHandlers } from '@/lib/conveyor/handlers/app-handler'
+import { registerVideoHandlers } from '@/lib/conveyor/handlers/video-handler'
 
 export function createAppWindow(): void {
   // Register custom protocol for resources
@@ -12,15 +13,15 @@ export function createAppWindow(): void {
   // Create the main window.
   const mainWindow = new BrowserWindow({
     width: 900,
-    height: 670,
+    height: 720,
     show: false,
-    backgroundColor: '#1c1c1c',
+    backgroundColor: '#f6f6f4',
     icon: appIcon,
     frame: false,
     titleBarStyle: 'hiddenInset',
-    title: 'Electron React App',
-    maximizable: false,
-    resizable: false,
+    title: '视频混剪工具',
+    maximizable: true,
+    resizable: true,
     webPreferences: {
       preload: join(__dirname, '../preload/preload.js'),
       sandbox: false,
@@ -30,6 +31,7 @@ export function createAppWindow(): void {
   // Register IPC events for the main window.
   registerWindowHandlers(mainWindow)
   registerAppHandlers(app)
+  registerVideoHandlers(mainWindow)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

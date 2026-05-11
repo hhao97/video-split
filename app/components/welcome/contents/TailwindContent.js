@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ContentStep from '../ContentStep';
+import AsterikIcon from '../icons/AsterikIcon';
+const TailwindContent = () => {
+    return (_jsxs("div", { children: [_jsx("h2", { className: "flex items-center gap-4", children: "Tailwind CSS" }), _jsx("p", { children: "A utility-first CSS framework for rapidly building custom user interfaces." }), _jsx("p", { children: "Tailwind CSS provides low-level utility classes that let you build completely custom designs without ever leaving your HTML, resulting in faster development and cleaner code." }), _jsxs("div", { className: "welcome-content-steps", children: [_jsx(ContentStep, { title: "Utility First", description: "Apply pre-defined utility classes directly in your markup", icon: AsterikIcon }), _jsx(ContentStep, { title: "Component Driven", description: "Extract reusable components for a consistent design system", icon: AsterikIcon }), _jsx(ContentStep, { title: "Customizable", description: "Extend Tailwind CSS with custom utilities and themes", icon: AsterikIcon }), _jsx(ContentStep, { title: "Performance", description: "Optimize your CSS for better performance with Tailwind's built-in tools", icon: AsterikIcon })] }), _jsxs("p", { className: "learn-more", children: ["Learn more about Tailwind CSS at", ' ', _jsx("a", { href: "https://tailwindcss.com/", target: "_blank", rel: "noreferrer", children: "tailwindcss.com" })] })] }));
+};
+export default TailwindContent;

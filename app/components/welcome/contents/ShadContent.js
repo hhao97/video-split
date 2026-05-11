@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ContentStep from '../ContentStep';
+import AsterikIcon from '../icons/AsterikIcon';
+const ShadContent = () => {
+    return (_jsxs("div", { children: [_jsx("h2", { className: "flex items-center gap-4", children: "Shadcn UI" }), _jsx("p", { children: "A collection of re-usable components built with Radix UI and Tailwind CSS." }), _jsx("p", { children: "Shadcn UI provides a set of accessible, customizable, and beautiful components that you can copy and paste into your apps. It's not a component library, but a collection of re-usable components that you can copy and customize." }), _jsxs("div", { className: "welcome-content-steps", children: [_jsx(ContentStep, { title: "Accessible Components", description: "Built with Radix UI primitives for maximum accessibility", icon: AsterikIcon }), _jsx(ContentStep, { title: "Customizable", description: "Copy and paste components into your project and customize them", icon: AsterikIcon }), _jsx(ContentStep, { title: "Tailwind CSS", description: "Styled with Tailwind CSS for consistent and modern design", icon: AsterikIcon }), _jsx(ContentStep, { title: "TypeScript", description: "Written in TypeScript for better developer experience", icon: AsterikIcon })] }), _jsxs("p", { className: "learn-more", children: ["Learn more about Shadcn UI at", ' ', _jsx("a", { href: "https://ui.shadcn.com/", target: "_blank", rel: "noreferrer", children: "ui.shadcn.com" })] })] }));
+};
+export default ShadContent;

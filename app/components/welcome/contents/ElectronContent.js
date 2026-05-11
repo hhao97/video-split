@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ContentStep from '../ContentStep';
+import AsterikIcon from '../icons/AsterikIcon';
+const ElectronContent = () => {
+    return (_jsxs("div", { children: [_jsx("h2", { className: "flex items-center gap-4", children: "Electron" }), _jsx("p", { children: "With the power of modern Chromium, Electron gives you an unopinionated blank slate to build your app." }), _jsx("p", { children: "Choose to integrate your favourite libraries and frameworks from the front-end ecosystem, or carve your own path with bespoke HTML code." }), _jsxs("div", { className: "welcome-content-steps", children: [_jsx(ContentStep, { title: "Web Technologies", description: "Electron embeds Chromium and Node.js to enable devs to build desktop apps", icon: AsterikIcon }), _jsx(ContentStep, { title: "Cross-Platform", description: "Build cross-platform desktop applications with ease using Electron", icon: AsterikIcon }), _jsx(ContentStep, { title: "Open Source", description: "Electron is an open source project maintained by the community", icon: AsterikIcon }), _jsx(ContentStep, { title: "Native APIs", description: "Access native APIs with ease using Electron's built-in modules", icon: AsterikIcon })] }), _jsxs("p", { className: "learn-more", children: ["Learn more about Electron at", ' ', _jsx("a", { href: "https://www.electronjs.org/", target: "_blank", rel: "noreferrer", children: "electronjs.org" })] })] }));
+};
+export default ElectronContent;

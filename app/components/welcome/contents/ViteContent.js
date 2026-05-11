@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ContentStep from '../ContentStep';
+import AsterikIcon from '../icons/AsterikIcon';
+const ViteContent = () => {
+    return (_jsxs("div", { children: [_jsx("h2", { className: "flex items-center gap-4", children: "Electron Vite" }), _jsx("p", { children: "Combine Electron's desktop capabilities with Vite's lightning-fast development experience." }), _jsx("p", { children: "This powerful combination delivers exceptional developer experience with instant HMR, while allowing you to build feature-rich desktop applications." }), _jsxs("div", { className: "welcome-content-steps", children: [_jsx(ContentStep, { title: "Vite Powered", description: "Inherit all the benefits of Vite and use the same way as Vite", icon: AsterikIcon }), _jsx(ContentStep, { title: "Optimize Asset Handling", description: "Optimize asset handling for Electron main process and renderer process", icon: AsterikIcon }), _jsx(ContentStep, { title: "Source Code Protection", description: "Compile to V8 bytecode to protect source code", icon: AsterikIcon }), _jsx(ContentStep, { title: "Pre-configured", description: "Pre-configured for Electron, don't worry about configuration", icon: AsterikIcon })] }), _jsxs("p", { className: "learn-more", children: ["Learn more about Electron Vite at", ' ', _jsx("a", { href: "https://electron-vite.org/guide/", target: "_blank", rel: "noreferrer", children: "electron-vite.org" })] })] }));
+};
+export default ViteContent;

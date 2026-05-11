@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import ContentStep from '../ContentStep';
+import AsterikIcon from '../icons/AsterikIcon';
+const ReactContent = () => {
+    return (_jsxs("div", { children: [_jsx("h2", { className: "flex items-center gap-4", children: "React" }), _jsx("p", { children: "React is a declarative, efficient, and flexible JavaScript library for building user interfaces." }), _jsx("p", { children: "It lets you build user interfaces out of individual pieces called components, creating reusable and maintainable code for your applications." }), _jsxs("div", { className: "welcome-content-steps", children: [_jsx(ContentStep, { title: "Component-Based", description: "Build encapsulated components that manage their state for complex UIs", icon: AsterikIcon }), _jsx(ContentStep, { title: "Declarative", description: "Create interactive UIs with simple views for each application state", icon: AsterikIcon }), _jsx(ContentStep, { title: "Learn Once, Write Anywhere", description: "Develop new features without rewriting existing code", icon: AsterikIcon }), _jsx(ContentStep, { title: "Virtual DOM", description: "Lightweight DOM representation for optimal rendering performance", icon: AsterikIcon })] }), _jsxs("p", { className: "learn-more", children: ["Learn more about React at", ' ', _jsx("a", { href: "https://reactjs.org/", target: "_blank", rel: "noreferrer", children: "reactjs.org" })] })] }));
+};
+export default ReactContent;
