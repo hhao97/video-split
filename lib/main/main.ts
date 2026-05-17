@@ -1,6 +1,18 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, protocol } from 'electron'
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import { createAppWindow } from './app'
+
+protocol.registerSchemesAsPrivileged([
+  {
+    scheme: 'local-video',
+    privileges: {
+      standard: true,
+      secure: true,
+      supportFetchAPI: true,
+      stream: true,
+    },
+  },
+])
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

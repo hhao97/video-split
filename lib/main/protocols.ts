@@ -16,3 +16,16 @@ export function registerResourcesProtocol() {
     }
   })
 }
+
+export function registerLocalVideoProtocol() {
+  protocol.handle('local-video', async (request) => {
+    try {
+      const url = new URL(request.url)
+      const filePath = decodeURIComponent(url.pathname)
+      return net.fetch(pathToFileURL(filePath).toString())
+    } catch (error) {
+      console.error('Local video protocol error:', error)
+      return new Response('Video not found', { status: 404 })
+    }
+  })
+}
